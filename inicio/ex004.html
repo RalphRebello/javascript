@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FuelClub</title>
+    <style>
+      body {
+        background-color: rgb(185, 67, 67);
+        color: white;
+        font: 20pt Arial;
+      }
+      h1 {
+        color: rgb(255, 230, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FuelClub</h1>
+    <p>O clube dos clubes</p>
+    <script>
+      var name = window.prompt("Digite seu nome: ");
+      document.write(
+        `Olá <strong>${name.toUpperCase()}</strong>, seja bem vindo!</br>`
+      );
+      const n1 = 1555.55;
+      document.write(
+        n1.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) +
+          "</br>"
+      );
+      document.write(
+        n1.toLocaleString("pt-BR", { style: "currency", currency: "USD" }) +
+          "</br>"
+      );
+      document.write(
+        n1.toLocaleString("pt-BR", { style: "currency", currency: "EUR" }) +
+          "</br>"
+      );
+    </script>
+  </body>
+</html>
