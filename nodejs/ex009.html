@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nacionalidade</title>
+    <style>
+      body {
+        font: normal 13pt "Arial";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nacionalidades</h1>
+    Escolha entre <input type="text" value="BR ou EUA" id="txtn" />
+    <input type="button" value="Verificar" onclick="verificar()" />
+    <div id="nac"></div>
+
+    <script>
+      function verificar() {
+        var n = window.document.querySelector("input#txtn");
+        var nac = window.document.querySelector("div#nac");
+        if (n.value == "BR") {
+          nac.innerHTML = "Brasileiro";
+        } else {
+          nac.innerHTML = "Extrangeiro";
+        }
+      }
+    </script>
+  </body>
+</html>

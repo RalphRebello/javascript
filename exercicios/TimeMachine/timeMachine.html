@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="update()">
+    <header>
+      <h1>Time Machine</h1>
+    </header>
+
+    <section id="box">
+      <div id="msg">some message here</div>
+
+      <div id="view">
+        <img
+          id="img"
+          src="/exercicios/TimeMachine/images/morning.png"
+          alt="Picture of the day"
+        />
+      </div>
+
+      <div id="alarm">
+        <p>
+          Hour
+          <input type="number" name="txthour" id="txthour" min="0" />
+          Minute
+          <input type="number" name="txtmin" id="txtmin" min="0" />
+        </p>
+
+        <p>
+          <input type="button" value="Set Alarm" onclick="setAlarm()" />
+          <img
+            id="alarm-img"
+            src="/exercicios/TimeMachine/images/alarm_unset.png"
+            alt="alram picture"
+          />
+        </p>
+        <audio
+          id="alarm-sound"
+          src="/exercicios/TimeMachine/audio/perfect_alarm.mp3"
+          preload="auto"
+        ></audio>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; TimeMachine Industries</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

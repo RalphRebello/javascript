@@ -16,12 +16,12 @@
         var vel = Number(txtvel.value);
         var res = window.document.querySelector("div#res");
 
-        res.innerHTML = `<p>Velocidade atual <strong>${vel}</strong></p>`;
+        res.innerHTML = `<p>Velocidade atual <strong>${vel} km/h</strong></p>`;
 
         if (vel > 80) {
-          res.innerHTML += `<strong>MULTADO</strong>`;
+          res.innerHTML += `<p><strong>MULTADO</strong></p>`;
         } else {
-          res.innerHTML += `<strong>Siga em frente</strong>`;
+          res.innerHTML += `<p><strong>Siga em frente</strong></p>`;
         }
       }
     </script>
