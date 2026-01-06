@@ -23,7 +23,7 @@ function alarm(setHour, setMin) {
   console.log(setHour, setMin);
 
   if (setHour == hour && setMin == minutes) {
-    img.src = "/exercicios/TimeMachine/images/ALARM.png";
+    img.src = "/exercicios/TimeMachine/images/ALARM.webp";
     document.body.style.background = "#ff004cff";
     box.style.background = "#a41f40ff";
     alarmSound.play();
@@ -52,7 +52,7 @@ function clock() {
   var msg = window.document.getElementById("msg");
 
   var [hour, minutes, seconds] = getDate();
-
+  //hour = 20
   if (hour >= 0 && hour < 12) {
     msg.innerHTML = `Bom dia! ${hour}:${minutes}:${seconds}`;
     img.src = "/exercicios/TimeMachine/images/morning.png";
